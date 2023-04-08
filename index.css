@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Pacifico&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Noto+Serif:wght@700&family=PT+Serif&family=Pacifico&display=swap');
 html,body{
     margin: 0;
     padding: 0;
@@ -174,35 +174,38 @@ div a:nth-child(1){
    line-height: 0.8;
  }
 
- .grid-container{
+ /* .grid-container{
+  border: 2px solid black;
    display: grid;
-   grid-template-columns: auto auto auto auto;
-   grid-template-rows: auto auto auto auto;
-   gap: 15px;
+   grid-template-columns: auto auto ;
+   /* grid-template-rows: auto auto auto auto; */
+   /* gap: 15px; 
    margin: 10px;
- }
+   width: 1330px;
+ } */
 
- .grid-item{
-   /* border: 1px solid black; */
+ /* .grid-item{
+   /* border: 1px solid black; 
    background-color: white;
    border-radius: 8px;
- }
- .grid-item h3{
+   width: 50%;
+ } */
+ /* .grid-item h3{
    text-transform: uppercase;
    position: relative;
    left: 10px;
    margin: 1px;
- }
- .card{
-   height: 150px;
-   width: 300px;
+ } */
+ /* .card{
+   height: 350px;
+   width: 500px;
    border-radius: 8px;
-   margin: 10px 10px 0px 10px;
+   /* margin: 10px 10px 0px 10px; 
    z-index: 3;
-   
- }
+   object-fit: cover;
+ } */
  
- .visit{
+ /* .visit{
    width: 100px;
    height: 30px;
    border-radius: 15px;
@@ -212,18 +215,18 @@ div a:nth-child(1){
    left: 100px;
    margin: 10px;
    z-index: 4;
- }
+ } */
 
- .visit:hover{
+ /* .visit:hover{
    box-shadow: 2px 2px rgb(165, 236, 180);
    animation-name: button;
   animation-timing-function: ease-in-out;
    animation-duration: 0.5s;
    animation-iteration-count: 1;
   
- }
+ } */
 
- @keyframes button {
+ /* @keyframes button {
     from{width: 100px;
       background-image: linear-gradient(red,blue);
     }
@@ -231,9 +234,142 @@ div a:nth-child(1){
       width: 115px;
       background-image: linear-gradient(to right , red ,blue);
     }
- }
+ } */
 
 .visit a{
   text-decoration: none;
+  color: white;
+}
+
+.shake-horizontal:hover {
+	-webkit-animation: shake-horizontal 3s ease-in-out both;
+	        animation: shake-horizontal 3s ease-in-out both;
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+.slide-fwd-center:hover{
+  animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
+
+.grid-container{
+   /* border: 2px solid black; */
+  width: 1330px;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  margin: 33px;
+  gap: 10px;
+}
+
+.grid-item{
+  /* border: 1px solid black; */
+  border-radius: 15px;
+  margin: 10px;
+  z-index: 3;
+}
+
+.card{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+/* .Fort-name{
+  width: 175px;
+  height: 45px;
+  /* padding: 8px; 
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
+} */
+.Fort-name{
+  font-size: 19px;
+  font-family: 'PT Serif', serif;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.Fort-destination{
+  color: white;
+  text-align: center;
+  margin: 0px 60px;
+}
+.Fort{
+  /* border: 1px solid black; */
+  height: 55px;
+  padding: 5px 30px 3px;
+  border-radius: 20px;
+  background-color: #9A208C;
+}
+.fort1{
+  position: absolute;
+  left: 220px;
+  top: 842px;
+  z-index: 4;
+  line-height: 0.1;
+  
+}
+.footer{
+  display: flex;
+  border-top: 1px solid rgb(0, 0, 0);
+  background-color: #cb8fe2;
+  justify-content: space-around;
+}
+.footer li{
+  list-style-type: none;
+  padding: 4px;
+  margin: 4px;
+}
+
+.footer .list a{
+  
+  font-size: small;
+  text-decoration: none;
+  color: black;
+}
+
+.footer .list a:hover{
+  /* border:1px solid black;
+  border-radius: 10px;
+  background-color: rgb(226, 221, 221); */
   color: white;
 }
