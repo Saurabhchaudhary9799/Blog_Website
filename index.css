@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Pacifico&display=swap');
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+   width: 100vw;
+   height: 50px;
+   background-color: #9A208C;
+}
+
+.brand{
+    display: inline-block;
+    width: 25vw;
+    height: 100%;
+    /* width: 330px; */
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    /* color: rgb(39, 3, 33); */
+    color: white;
+}
+
+.container div{
+    float: left;
+}
+
+.link{
+    position: relative;
+     width: 50vw;
+     height: 100%;
+     /* background-color:; */
+     /* border-radius: 8px; */
+     font-size:0 ;
+}
+
+.link a{
+    font-size: 15px;
+     text-decoration: none;
+     text-transform: uppercase;
+     color: black;
+     display: inline-block;
+     text-align: center;
+     line-height: 50px;
+     position: relative;
+     z-index: 1;
+}
+
+div .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background-color:white;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+div a:nth-child(1){
+    width: 100px;
+ }
+
+ div .start-home , a:nth-child(1):hover~.animation{
+    width: 100px;
+    left: 0;
+ }
+
+ div a:nth-child(2){
+    width: 110px;
+ }
+
+ div a:nth-child(2):hover~.animation{
+    width: 110px;
+    left: 100px;
+ }
+
+ div a:nth-child(3){
+    width: 100px;
+ }
+
+ div a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 210px;
+ }
+
+ div a:nth-child(4){
+    width: 160px;
+ }
+
+ div a:nth-child(4):hover~.animation{
+    width: 160px;
+    left: 310px;
+ }
+
+ div a:nth-child(5){
+    width: 120px;
+ }
+
+ div a:nth-child(5):hover~.animation{
+    width: 120px;
+    left: 470px;
+ }
+
+ .search-bar{
+    width: 25vw;
+    height: 100%;
+
+ }
+
+ #search{
+    /* width: 40%; */
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 1150px;
+    top: 10px;
+ }
+ 
+ .main{
+   background-color: #B2A4FF;
+ }
+ .image{
+   border: 1px solid black;
+   height: 500px;
+   width: 1365px;
+   z-index: 0;
+ }
+
+ .nahargarh-fort{
+   height: 100%;
+   width: 100%;
+ }
+
+ .quote-rajasthan{
+   display: inline;
+   position: absolute;
+   left: 150px;
+   top: 350px;
+   z-index: 1;
+   color: white;
+   font-size: 45px;
+   font-family: 'Pacifico', cursive;
+ }
+ .quote-rajasthan p{
+   line-height: 0.4;
+ }
+
+ .quote-rajasthan p:hover{
+   text-shadow: 2px 0px rgb(77, 127, 235),0px 2px rgb(228, 72, 98);
+ }
+ .welcome{
+   margin: 30px 0px;
+ }
+ .welcome .welcome-first{
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Noto Serif', serif;
+   color: white;
+ }
+
+ .welcome .welcome-second{
+   text-align: center;
+   font-size: 15px;
+   font-family: 'Noto Serif', serif;
+   /* font-weight:100px ; */
+   color: white;
+ }
+
+ .welcome div{
+   line-height: 0.8;
+ }
+
+ .grid-container{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-template-rows: auto auto auto auto;
+   gap: 15px;
+   margin: 10px;
+ }
+
+ .grid-item{
+   /* border: 1px solid black; */
+   background-color: white;
+   border-radius: 8px;
+ }
+ .grid-item h3{
+   text-transform: uppercase;
+   position: relative;
+   left: 10px;
+   margin: 1px;
+ }
+ .card{
+   height: 150px;
+   width: 300px;
+   border-radius: 8px;
+   margin: 10px 10px 0px 10px;
+   z-index: 3;
+   
+ }
+ 
+ .visit{
+   width: 100px;
+   height: 30px;
+   border-radius: 15px;
+   position: relative;
+   background-image: linear-gradient(red,blue);
+   color: white;
+   left: 100px;
+   margin: 10px;
+   z-index: 4;
+ }
+
+ .visit:hover{
+   box-shadow: 2px 2px rgb(165, 236, 180);
+   animation-name: button;
+  animation-timing-function: ease-in-out;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+  
+ }
+
+ @keyframes button {
+    from{width: 100px;
+      background-image: linear-gradient(red,blue);
+    }
+    to{
+      width: 115px;
+      background-image: linear-gradient(to right , red ,blue);
+    }
+ }
+
+.visit a{
+  text-decoration: none;
+  color: white;
+}
