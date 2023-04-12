@@ -122,6 +122,7 @@ div a:nth-child(1){
  
  .main{
    background-color: #B2A4FF;
+   
  }
  .image{
    border: 1px solid black;
@@ -174,67 +175,7 @@ div a:nth-child(1){
    line-height: 0.8;
  }
 
- /* .grid-container{
-  border: 2px solid black;
-   display: grid;
-   grid-template-columns: auto auto ;
-   /* grid-template-rows: auto auto auto auto; */
-   /* gap: 15px; 
-   margin: 10px;
-   width: 1330px;
- } */
 
- /* .grid-item{
-   /* border: 1px solid black; 
-   background-color: white;
-   border-radius: 8px;
-   width: 50%;
- } */
- /* .grid-item h3{
-   text-transform: uppercase;
-   position: relative;
-   left: 10px;
-   margin: 1px;
- } */
- /* .card{
-   height: 350px;
-   width: 500px;
-   border-radius: 8px;
-   /* margin: 10px 10px 0px 10px; 
-   z-index: 3;
-   object-fit: cover;
- } */
- 
- /* .visit{
-   width: 100px;
-   height: 30px;
-   border-radius: 15px;
-   position: relative;
-   background-image: linear-gradient(red,blue);
-   color: white;
-   left: 100px;
-   margin: 10px;
-   z-index: 4;
- } */
-
- /* .visit:hover{
-   box-shadow: 2px 2px rgb(165, 236, 180);
-   animation-name: button;
-  animation-timing-function: ease-in-out;
-   animation-duration: 0.5s;
-   animation-iteration-count: 1;
-  
- } */
-
- /* @keyframes button {
-    from{width: 100px;
-      background-image: linear-gradient(red,blue);
-    }
-    to{
-      width: 115px;
-      background-image: linear-gradient(to right , red ,blue);
-    }
- } */
 
 .visit a{
   text-decoration: none;
@@ -311,15 +252,7 @@ div a:nth-child(1){
   height: 100%;
   border-radius: 15px;
 }
-/* .Fort-name{
-  width: 175px;
-  height: 45px;
-  /* padding: 8px; 
-  border-radius: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Noto Serif', serif;
-} */
+
 .Fort-name{
   font-size: 19px;
   font-family: 'PT Serif', serif;
@@ -348,6 +281,56 @@ div a:nth-child(1){
   line-height: 0.1;
   
 }
+
+.fort1-info{
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  left: 80px;
+  top: 750px;
+  z-index: 5;
+  background-color: #9A208C;
+  padding: 10px 20px 0px;
+  border-radius: 12px;
+  
+
+}
+.hidden{
+  display: none;
+}
+
+.fort1-info h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'PT Serif', serif;
+  color: whitesmoke;
+}
+
+.fort1-info p{
+  color: white;
+}
+
+.fort1-info .explore{
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 12px;
+  margin: 0px 200px;
+}
+.explore a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+
 .footer{
   display: flex;
   border-top: 1px solid rgb(0, 0, 0);
