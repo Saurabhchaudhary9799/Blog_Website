@@ -127,7 +127,7 @@ div a:nth-child(1){
  .image{
    border: 1px solid black;
    height: 500px;
-   width: 1365px;
+   width: 100%;
    z-index: 0;
  }
 
@@ -147,7 +147,7 @@ div a:nth-child(1){
    font-family: 'Pacifico', cursive;
  }
  .quote-rajasthan p{
-   line-height: 0.4;
+   line-height: 1rem;
  }
 
  .quote-rajasthan p:hover{
